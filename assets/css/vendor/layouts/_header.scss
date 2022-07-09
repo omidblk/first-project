@@ -1,0 +1,40 @@
+#siteHead{
+    color: white;
+    background-color: map-get($colors, 'primary' );
+    .navigation{
+        display: flex;
+        height: 10vh;
+        ul{
+            margin: auto 0;
+            padding: 0;
+            list-style: none;
+            
+        }
+        li{
+            display: inline;
+            padding-left: 1rem;
+            &:not(:last-child){border-left: 1px solid white;}
+            a{
+                &.current{
+                    pointer-events: none;
+                    background-color: white;
+                    color: map-get($colors, 'primary' );
+                    padding: 0 20px;
+                }
+                border-radius: $border-radius;
+                transition: all 0.3s linear;
+                &:hover{
+                    background-color: white;
+                    color: map-get($colors, 'primary' );
+                    padding: 0 20px;
+                }
+            }
+        }
+    }
+    .logo{
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        a{margin-right: auto;}
+    }
+}

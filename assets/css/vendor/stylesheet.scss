@@ -1,0 +1,18 @@
+@charset "UTF-8";
+@import 'variables';
+::selection{color:#fff;background-color:lighten(map-get($colors, primary), 10%);}
+@import 'fonts';
+body{
+	color: $text-body;
+	direction: $direction;
+	font-size: 13px;
+	font-weight: 400;
+	font-family: iransans, Tahoma;
+	background-color: $background-color;
+}
+@import 'layouts/header';
+@import 'layouts/singles';
+@import 'layouts/aside';
+@import 'layouts/footer';
+@import 'responsive';
+@import 'plugins';
